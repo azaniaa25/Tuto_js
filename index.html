@@ -6,11 +6,22 @@
     <title>Document</title>
     <script>
          const age=45
-         const pays="Senegal"
+         const pays="TURQUIE"
          const peutconduire=age ===45 || pays==="Senegal"
           if(pays!="Senegal" & age>=30){
             console.log ("Vous etes VIEUX. MASSSAAHH   ENTCAS BIENVENUE DANS LE PAYS DE MACRON")
           
+            switch(pays){
+                case "FR":
+                      console.log("je vis en France")
+                      break
+                case "Senegal" :
+                    console.log("je vis au Senegal")
+                    break
+                default:
+                    console.log("Je suis dans un pays que je ne connais pas")     
+                    break   
+            }
          
         }
 
