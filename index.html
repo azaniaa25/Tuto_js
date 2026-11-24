@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        const notes = [14,15,48,56]
-       const person={
-        firstname: "Kylian",
-        lastname: "Fono",
-        age:"23",
-       }
-       const greeting = "Bonjour"
-       for(let letter in greeting ){
-         console.log(letter)
-       }
+        
+     
+         let a = prompt("ENTREZ UN CHIFFRE EN 0 et 10 ")
+         if(a<0 || a>10){
+            console.log("svp entrez un chiffre dans l´intervalle ")
+         }
+         else{
+            for(i=0; i<a; i++){
+                console.log(i)
+            }
+         }
+
+
+
+     
+
+
        
     
     </script>
