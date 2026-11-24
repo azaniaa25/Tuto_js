@@ -7,15 +7,22 @@
     <script>
         
      
-         let a = prompt("ENTREZ UN CHIFFRE EN 0 et 10 ")
-         if(a<0 || a>10){
-            console.log("svp entrez un chiffre dans l´intervalle ")
-         }
-         else{
-            for(i=0; i<a; i++){
-                console.log(i)
+        let guess=8;
+        let a
+        while(true ){
+            a=prompt("votre chiffere") *1
+            if (a<guess) {
+                console.log("plus")
             }
-         }
+            else if (a> guess){
+                console.log("moins")
+            } 
+            else {
+                break
+            }
+
+        }
+        console.log("bravo! vous avez trouvé ")
 
 
 
