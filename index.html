@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-    
-   const ISPAIR = function (a, fn){
-    if (a%2=== 0) {
-        fn()
-    }
+    const a= function(n) {
+        if (n<2){
+            console.log(false) 
+        }
+        else{
+            for(let i=2 ; i< Math.sqrt(n) ;i++)
+        { if(n%i==0){
+            console.log(false)
+        }
 
-   }
-   ISPAIR(3,function() {
-    console.log("mon nombre est pair" +n)
-   })
+        }
+        return true 
+        }
+    }
+     console.log(a(0))
+        console.log(a(1))
+        console.log(a(11))
+        console.log(a(12))
+        console.log(a(2))
    
+
     </script>
 </head>
 <body>
-    
+
 </body>
 </html>
