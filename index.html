@@ -6,8 +6,15 @@
     <title>Document</title>
     <script>
     
-   const sum = (a,b)=> a+b
-   console.log(sum (4,789))
+   const ISPAIR = function (a, fn){
+    if (a%2=== 0) {
+        fn()
+    }
+
+   }
+   ISPAIR(3,function() {
+    console.log("mon nombre est pair" +n)
+   })
    
     </script>
 </head>
