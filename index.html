@@ -7,22 +7,17 @@
     <script>
         
      
-        let guess=8;
-        let a
-        while(true ){
-            a=prompt("votre chiffre") *1
-            if (a<guess) {
-                console.log("plus")
-            }
-            else if (a> guess){
-                console.log("moins")
-            } 
-            else {
-                break
-            }
-
+    function canDrive (age, pays) {
+        if (
+           ( age> 18 && pays=== "FR") || (age> 16 && pays=== "US")
+        ) {
+            return true
         }
-        console.log("bravo! vous avez trouvé ")
+        return false 
+    }
+     
+
+    console.log(canDrive(16, "FR"))
 
 
 
