@@ -6,10 +6,15 @@
     <title>Document</title>
     <script>
     
-    function mafonction(){
-        console.log(this)
-    }
-    mafonction.call (52)
+   const a={
+     nom:" leonie",
+     prenom: "AZANIA",
+     nom_entier: function () {
+        console.log(`${this.nom} ${this.prenom} ` )
+     }
+
+   }
+   a.nom_entier()
     </script>
 </head>
 <body>
