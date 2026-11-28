@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        const notes =[12,13,14]
-        function upNotes (n) {
-            n[2]++
-        }
-        upNotes(notes)
-        console.log(notes)
     
+    function mafonction(){
+        console.log(this)
+    }
+    mafonction.call (52)
     </script>
 </head>
 <body>
